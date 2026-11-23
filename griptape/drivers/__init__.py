@@ -86,6 +86,7 @@ from .web_search.google import GoogleWebSearchDriver
 from .web_search.duck_duck_go import DuckDuckGoWebSearchDriver
 from .web_search.exa import ExaWebSearchDriver
 from .web_search.tavily import TavilyWebSearchDriver
+from .web_search.keenable import KeenableWebSearchDriver
 from .web_search.perplexity import PerplexityWebSearchDriver
 
 from .event_listener import BaseEventListenerDriver
@@ -207,6 +208,7 @@ __all__ = [
     "HuggingFaceHubPromptDriver",
     "HuggingFacePipelineImageGenerationDriver",
     "HuggingFacePipelinePromptDriver",
+    "KeenableWebSearchDriver",
     "LeonardoImageGenerationDriver",
     "LocalConversationMemoryDriver",
     "LocalFileManagerDriver",

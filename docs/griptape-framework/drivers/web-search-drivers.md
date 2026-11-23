@@ -102,6 +102,16 @@ The [DuckDuckGoWebSearchDriver](../../reference/griptape/drivers/web_search/duck
 --8<-- "docs/griptape-framework/drivers/src/web_search_drivers_6.py"
 ```
 
+### Keenable
+
+The [KeenableWebSearchDriver](../../reference/griptape/drivers/web_search/keenable_web_search_driver.md) uses the [Keenable Search API](https://docs.keenable.ai/api-reference/search).
+It needs no extra and no API key: without a key it uses Keenable's keyless public endpoint, which is rate-limited per IP address.
+Pass a Keenable `api_key` for the keyed endpoint. Keenable logs requests with or without a key on its default [data policy](https://docs.keenable.ai/data-privacy).
+
+```python
+--8<-- "docs/griptape-framework/drivers/src/web_search_drivers_keenable.py"
+```
+
 ### Perplexity
 
 The [PerplexityWebSearchDriver](../../reference/griptape/drivers/web_search/perplexity_web_search_driver.md) uses the [Perplexity Prompt Driver](../drivers/prompt-drivers.md#perplexity) internally.
